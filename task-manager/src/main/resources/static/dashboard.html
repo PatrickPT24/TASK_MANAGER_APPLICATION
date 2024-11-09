@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard - Task Management App</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome, <span id="user-email"></span></h2>
+        <button id="logout">Logout</button>
+    </header>
+    <main>
+        <section id="task-section">
+            <!-- Task creation, assignment, and status updates go here -->
+            <!-- Inside dashboard.html -->
+            <div class="task-form">
+                <form id="task-form">
+                <input type="text" id="task-name" placeholder="Task Name" required />
+                <textarea id="task-desc" placeholder="Description"></textarea>
+                <select id="status">
+                    <option value="To Do">To Do</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                <select id="assignee">
+                    <option value="Unassigned">Unassigned</option>
+                    <option value="team-member@example.com">team-member@example.com</option>
+                    <!-- Add more members as needed -->
+                </select>
+                <button type="submit" class="button">Add Task</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="/task-manager/src/main/resources/static/js/main.js"></script>
+    <script src="/task-manager/src/main/resources/static/js/task.js"></script>
+</body>
+</html>
