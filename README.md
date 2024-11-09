@@ -1,0 +1,2 @@
+# TASK_MANAGER_APPLICATION
+ The backend will handle user authentication, task assignment, status updates, and sending email notifications to team members.  Required Tools: JDK (Java Development Kit): Download and install JDK (Java 17 recommended for stability).  Maven: Use Maven for dependency management and project structure. Most IDEs like VS Code with Maven support.  MySQL Database: Install MySQL for storing task and user information.  SMTP Email Service: You can use Gmail’s SMTP for testing or a dedicated service (like SendGrid) in production.
