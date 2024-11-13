@@ -1,7 +1,6 @@
-package com.example.taskmanagement.model;
+package model;
 
 import jakarta.persistence.*;
-import javax.persistence.*;
 
 @Entity
 public class User {

@@ -1,4 +1,4 @@
-package com.example.taskmanagement.model;
+package model;
 
 import jakarta.persistence.*;
 import java.util.Date;
@@ -16,8 +16,9 @@ public class Task {
     private String status; // Pending, In Progress, Completed
 
     @ManyToOne
-    @JoinColumn(name = "assigned_user_id")
-    private User assignedUser;
+    @JoinColumn(name = "team_member_id")
+    private TeamMember assignedTeamMember;
+
 
     // Getters and Setters
     public Long getId() { return id; }
@@ -32,6 +33,6 @@ public class Task {
     public void setDeadline(Date deadline) { this.deadline = deadline; }
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
-    public User getAssignedUser() { return assignedUser; }
-    public void setAssignedUser(User assignedUser) { this.assignedUser = assignedUser; }
+    public TeamMember getAssignedTeamMember() { return assignedTeamMember; }
+    public void setAssignedTeamMember(TeamMember assignedTeamMember) { this.assignedTeamMember = assignedTeamMember; }
 }

@@ -1,4 +1,4 @@
-package com.example.taskmanager.model;
+package model;
 
 import jakarta.persistence.*;
 
